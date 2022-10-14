@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 21:54:48 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/13 23:47:58 by rouarrak         ###   ########.fr       */
+/*   Created: 2022/10/14 00:03:09 by rouarrak          #+#    #+#             */
+/*   Updated: 2022/10/14 00:10:06 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void	ft_putchar_fd(char c, int fd)
 {
-	char	*str;
-
-	str = malloc(len);
-	if (!str)
-		return (0);
-	ft_memcpy(str, s + start, len);
-	return (str);
+	write(fd, &c, 1);
 }
