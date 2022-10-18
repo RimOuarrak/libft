@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rouarrak <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 21:45:01 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/11 21:45:06 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/16 16:36:23 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include<string.h>
 
 int	ft_atoi(const char *str)
 {
@@ -21,11 +23,11 @@ int	ft_atoi(const char *str)
 	i = 0;
 	res = 0;
 	s = 1;
-	while (str[i] <= 32)
+	while ((str[i] <= 13 && str[i] >= 9) || str[i] == 32)
 		i++;
 	if (str[i] == '-')
 	{
-		s *= -1;
+		s = -1;
 		i++;
 	}
 	else if (str[i] == '+')
@@ -38,3 +40,12 @@ int	ft_atoi(const char *str)
 	}
 	return (res * s);
 }
+	// if (res <= -2147483648)
+	// 	return (0);
+	// if(res > 2147483647)
+	// 	return (-1);
+// int main()
+// {
+// 	printf("%d\n",ft_atoi("99999999994442459999999"));
+// 	printf("%d",atoi("99999999994442459999999"));
+// }

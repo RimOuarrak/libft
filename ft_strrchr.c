@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rouarrak <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 01:59:13 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/08 01:59:16 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/18 03:50:00 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,17 @@ char	*ft_strrchr(const char *s, int c)
 	int	size;
 
 	i = 0;
-	ctn = 0;
+	ctn = -1;
 	size = ft_strlen(s);
+	if (!s)
+		return (0);
 	while (i <= size)
 	{
 		if (s[i] == c)
 			ctn = i;
 		i++;
 	}
-	if (ctn != 0)
+	if (ctn >= 0)
 		return ((char *)&s[ctn]);
 	return (0);
 }
@@ -37,6 +39,16 @@ char	*ft_strrchr(const char *s, int c)
 
 // int main()
 // {
-// 	printf("%s\n", strrchr("Hello World", '\0'));
-// 	printf("%s\n", ft_strrchr("Hello World", '\0'));
+// 	char *src = "abbbbbbbb";
+// 	char *d1 = strrchr(src, 'z');
+// 	char *d2 = ft_strrchr(src, 'z');
+// 	printf("%s\n", d1);
+// 	printf("%s\n", d2);
+// }
+// #include <stdio.h>
+
+// int main()
+// {
+// 	printf("dyali:%s\n", ft_strrchr("teste",'e'));
+// 	printf("dyalhom:%s\n", strrchr("teste",'e'));
 // }

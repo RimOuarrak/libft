@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rouarrak <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 21:19:39 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/11 21:19:43 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/15 00:04:09 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memcpy(void	*dst, const void	*src, size_t n)
 	unsigned char	*s;
 
 	i = 0;
-	if (!dst)
-		return (0);
 	if (dst == src)
 		return (dst);
 	d = (unsigned char *)dst;
@@ -32,3 +30,5 @@ void	*ft_memcpy(void	*dst, const void	*src, size_t n)
 	}
 	return (dst);
 }
+	//if (!dst)
+	//	return (0);

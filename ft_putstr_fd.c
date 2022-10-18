@@ -6,7 +6,7 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 00:10:25 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/14 00:31:38 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/14 23:39:29 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s)
-		write(fd, s++, 1);
+	if (s)
+	{
+		while (*s)
+			write(fd, s++, 1);
+	}
 }

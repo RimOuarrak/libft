@@ -6,7 +6,7 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 00:15:21 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/14 00:31:29 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/14 23:40:07 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	while (*s)
-		write(fd, s++, 1);
-	write (fd, "\n", 1);
+	if (s)
+	{
+		while (*s)
+			write(fd, s++, 1);
+		write (fd, "\n", 1);
+	}
 }
