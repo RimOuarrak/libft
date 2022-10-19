@@ -6,12 +6,11 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 21:45:01 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/16 16:36:23 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/19 22:01:38 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 #include<string.h>
 
 int	ft_atoi(const char *str)

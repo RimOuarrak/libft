@@ -6,13 +6,13 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 21:54:48 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/15 14:11:07 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/19 22:04:49 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	sghir(int n1, int n2)
+int	sghir(unsigned long long n1, unsigned long long n2)
 {
 	if (n1 < n2)
 		return (n1);
@@ -29,13 +29,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (0);
 	if (start >= ft_strlen(s))
-		m = 0;
+		return (ft_strdup (""));
 	else
 		m = sghir(ft_strlen(s) - start, len);
 	str = malloc(m + 1);
 	if (!str)
 		return (NULL);
-	while (i < m)
+	while (s[start + i] && i < m)
 	{
 		str[i] = s[start + i];
 		i++;

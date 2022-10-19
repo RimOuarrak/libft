@@ -6,7 +6,7 @@
 #    By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 14:04:46 by rouarrak          #+#    #+#              #
-#    Updated: 2022/10/19 06:02:43 by rouarrak         ###   ########.fr        #
+#    Updated: 2022/10/19 20:45:21 by rouarrak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS = 	ft_isdigit.c ft_putchar_fd.c ft_strlcpy.c ft_tolower.c \
 		ft_isascii.c ft_memset.c ft_strlcat.c ft_putnbr_fd.c ft_itoa.c
 
 BSRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
-		ft_lstadd_back.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c ft_lstmap.c
+		ft_lstadd_back.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c
 
 OBJS = ${SRCS:.c=.o}
 
