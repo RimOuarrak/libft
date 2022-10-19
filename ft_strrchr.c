@@ -6,7 +6,7 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 01:59:13 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/18 03:50:00 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/18 18:29:17 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 		return (0);
 	while (i <= size)
 	{
-		if (s[i] == c)
+		if (s[i] == (const char)c)
 			ctn = i;
 		i++;
 	}
