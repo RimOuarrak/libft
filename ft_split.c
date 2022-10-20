@@ -6,7 +6,7 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 18:46:17 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/19 21:23:35 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/20 17:24:52 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,20 +67,26 @@ char	*eamar(int i, const char *s, char *p, char c)
 	return (p);
 }
 
+// void	*khwi(char *p, char *pp)
+// {
+// 	if (!pp)
+// 		free (p);
+// }
+
 char	**ft_split(char const *s, char c)
 {
-	int		l;
 	char	**p;
 	int		i;
 	int		j;
 
 	j = 0;
 	i = 0;
-	l = n_word(s, c);
-	p = malloc ((l + 1) * sizeof(char *));
+	if (!s)
+		return (0);
+	p = malloc ((n_word(s, c) + 1) * sizeof(char *));
 	if (!p)
 		return (NULL);
-	while (i < l)
+	while (i < n_word(s, c))
 	{
 		while (s[j] == c)
 			j++;
