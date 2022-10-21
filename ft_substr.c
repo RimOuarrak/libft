@@ -6,13 +6,13 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 21:54:48 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/19 22:04:49 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/21 18:29:08 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	sghir(unsigned long long n1, unsigned long long n2)
+static int	sghir(unsigned long long n1, unsigned long long n2)
 {
 	if (n1 < n2)
 		return (n1);

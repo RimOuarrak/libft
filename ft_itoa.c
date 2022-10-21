@@ -6,13 +6,13 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 16:38:47 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/17 03:19:14 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/21 18:27:47 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	cal(int n)
+static int	cal(int n)
 {
 	int		l;
 

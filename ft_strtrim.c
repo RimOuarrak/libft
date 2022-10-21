@@ -6,13 +6,13 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 18:14:35 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/15 20:00:20 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/21 18:07:41 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	exist(char c, char const *set)
+static int	exist(char c, char const *set)
 {
 	int	i;
 
@@ -54,11 +54,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	p[i] = '\0';
 	return (p);
 }
-
-// #include <stdio.h>
-// int main ()
-// {
-// 	char s1[] = "/rim *";
-// 	char set[] = "/*";
-// 	printf("%s", ft_strtrim(s1, set));
-// }

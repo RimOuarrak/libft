@@ -6,13 +6,13 @@
 /*   By: rouarrak <rouarrak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 18:46:17 by rouarrak          #+#    #+#             */
-/*   Updated: 2022/10/20 17:24:52 by rouarrak         ###   ########.fr       */
+/*   Updated: 2022/10/21 18:54:36 by rouarrak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	n_word(const char *s, char c)
+static int	n_word(const char *s, char c)
 {
 	int	i;
 	int	j;
@@ -32,7 +32,7 @@ int	n_word(const char *s, char c)
 	return (ctn);
 }
 
-int	nl(int i, const char *s, char c)
+static int	nl(int i, const char *s, char c)
 {
 	int	ctn;
 
@@ -47,7 +47,7 @@ int	nl(int i, const char *s, char c)
 	return (ctn);
 }
 
-char	*eamar(int i, const char *s, char *p, char c)
+static char	*eamar(int i, const char *s, char *p, char c)
 {
 	int	j;
 	int	n;
@@ -66,12 +66,6 @@ char	*eamar(int i, const char *s, char *p, char c)
 	p[j] = '\0';
 	return (p);
 }
-
-// void	*khwi(char *p, char *pp)
-// {
-// 	if (!pp)
-// 		free (p);
-// }
 
 char	**ft_split(char const *s, char c)
 {
